@@ -15,11 +15,7 @@
 package net.dragondelve.chaosloot.client.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import net.dragondelve.chaosloot.client.ChaosLootUtil;
@@ -27,28 +23,21 @@ import net.dragondelve.mabelfx.StageController;
 
 public class ChaosLootController implements StageController {
 
+    Stage stage;
     @FXML
     private ChoiceBox<?> realmChoiceBox;
-
     @FXML
     private MenuItem connectionItem;
-
     @FXML
     private ProgressBar generationPrgoressBar;
-
     @FXML
     private Button generateButton;
-
     @FXML
     private BorderPane rootPane;
-
     @FXML
     private TextField keyTextField;
-
     @FXML
     private ChoiceBox<?> moduleChoiceBox;
-
-    Stage stage;
 
     @FXML
     public void initialize() {

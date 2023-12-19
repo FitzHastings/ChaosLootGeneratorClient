@@ -13,7 +13,7 @@ public class ChaosLootApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        ChaosLootUtil.DEFAULT_LOGGER.log(Level.INFO,"Chaos Loot Generator is launching");
+        ChaosLootUtil.DEFAULT_LOGGER.log(Level.INFO, "Chaos Loot Generator is launching");
         FXMLLoader loader = new FXMLLoader(ChaosLootUtil.CHAOS_LOOT_FXML_URL);
         StageController controller = new ChaosLootController();
         controller.setStage(primaryStage);

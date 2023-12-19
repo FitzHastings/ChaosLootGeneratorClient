@@ -14,8 +14,10 @@
 
 package net.dragondelve.chaosloot.client;
 
+import javafx.application.Application;
+
 public class ChaosLootGeneratorMain {
     public static void main(String[] args) {
-        ChaosLootApplication.launch(args);
+        Application.launch(ChaosLootApplication.class, args);
     }
 }
